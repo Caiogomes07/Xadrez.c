@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+int main() {
+
+    int i;
+
+    // =========================
+    // TORRE - FOR
+    // 5 casas para a direita
+    // =========================
+
+    printf("Movimento da Torre:\n");
+
+    for (i = 1; i <= 5; i++) {
+        printf("Direita\n");
+    }
+
+    // =========================
+    // BISPO - WHILE
+    // 5 casas na diagonal
+    // =========================
+
+    printf("\nMovimento do Bispo:\n");
+
+    i = 1;
+    while (i <= 5) {
+        printf("Cima Direita\n");
+        i++;
+    }
+
+    // =========================
+    // RAINHA - DO-WHILE
+    // 8 casas para a esquerda
+    // =========================
+
+    printf("\nMovimento da Rainha:\n");
+
+    i = 1;
+    do {
+        printf("Esquerda\n");
+        i++;
+    } while (i <= 8);
+
+    // =========================
+    // CAVALO - FOR + WHILE
+    // 2 para baixo e 1 esquerda
+    // =========================
+
+    printf("\nMovimento do Cavalo:\n");
+
+    int baixo = 2;
+    int esquerda = 1;
+    int j;
+
+    // Primeiro movimento: para baixo
+    for (i = 1; i <= baixo; i++) {
+        printf("Baixo\n");
+    }
+
+    // Segundo movimento: para esquerda
+    j = 1;
+    while (j <= esquerda) {
+        printf("Esquerda\n");
+        j++;
+    }
+
+    return 0;
+}
